@@ -1,0 +1,72 @@
+@import url("https://fonts.google.com/specimen/Inter?vfquery=inter");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+header {
+  background: #F55A5A;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.content {
+  padding: 5.75rem 5rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.content--image {
+  width: 30%;
+  /* height: auto; */
+  height: 750px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.content--description {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.content--description > div {
+  display: flex;
+}
+
+.content--description-location {
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  margin-left: 0.5rem;
+  margin-right: 1rem;
+}
+
+.content--description-viewUrl {
+  text-decoration: underline;
+  color: #918E9B;
+}
+
+.content--description h1 {
+  font-size: clamp(1rem, -1.6563rem + 8.5vw, 3.125rem);
+  margin-bottom: 1.75rem;
+}
+
+.content--description h6 {
+  font-size: clamp(1rem, 1.0781rem + -0.25vw, 0.9375rem);
+}
+
+.content--description p {
+  font-size: clamp(1rem, 0.6875rem + 1vw, 1.25rem);
+  margin-top: 5rem;
+  text-align: justify;
+}
